@@ -96,9 +96,20 @@ namespace WinFormsApp_CV_work
                 Preview_lbl.Visible = false;
                 Preview_panel.Enabled = false;
                 Preview_panel.Visible = false;
-                Tips_lb.Visible = false;
-
-               
+                Tips_lb.Visible = false;  
+            }
+            else
+            {
+                SummaryMain_pl.Visible = false;
+                SummaryMain_pl.Enabled = false;
+                SubForm_panel.Visible = true;
+                Mainform_panel.Visible = true;
+                Mainform_panel.Enabled = true;
+                Section_lbl.Visible = true;
+                Preview_lbl.Visible = true;
+                Preview_panel.Enabled = true;
+                Preview_panel.Visible = true;
+                Tips_lb.Visible = true;
             }
 
         }

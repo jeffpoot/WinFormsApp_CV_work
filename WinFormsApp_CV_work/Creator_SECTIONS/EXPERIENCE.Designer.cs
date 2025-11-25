@@ -84,8 +84,7 @@
             // 
             // EXPERIENCE
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(245, 246, 255);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(JobAdd_btt);

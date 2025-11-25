@@ -36,6 +36,13 @@ namespace WinFormsApp_CV_work
 
             RandomTimer.Start();
 
+
+            summary_Sec.EditClicked += Summary_EditClicked;
+        }
+
+        private void Summary_Sec_EditClicked(object? sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void NextButton_Click(object sender, EventArgs e)
@@ -169,13 +176,16 @@ namespace WinFormsApp_CV_work
             Mainform_panel.Controls.Add(project_Sec);
             project_Sec.Dock = DockStyle.Fill;
 
+            NextButton.Content = "Next";
+
         }
 
         private void Summary_bttn_Click(object sender, EventArgs e)
         {
             HighlightButton(Summary_bttn);
-
-            
+            SummaryMain_pl.Visible = true;
+            SummaryMain_pl.Enabled = true;
+            SubForm_panel.Visible = false;
             SummaryMain_pl.Controls.Clear();
             SummaryMain_pl.Controls.Add(summary_Sec);
             summary_Sec.Dock = DockStyle.Fill;
@@ -183,11 +193,38 @@ namespace WinFormsApp_CV_work
             Mainform_panel.Enabled = false;
             Section_lbl.Visible = false;
             Preview_lbl.Visible = false;
-            NextButton.Visible = false;
             Preview_panel.Enabled = false;
             Preview_panel.Visible = false;
             Tips_lb.Visible = false;
         }
+
+        private void Summary_EditClicked(object sender, EventArgs e)
+        {
+            HighlightButton(Personal_bttn);
+            Section_lbl.Text = "Personal";
+
+            SummaryMain_pl.Visible = false;
+            SummaryMain_pl.Enabled = false;
+
+            SubForm_panel.Visible = true;
+            Mainform_panel.Visible = true;
+            Mainform_panel.Enabled = true;
+
+            Preview_lbl.Visible = true;
+            Preview_panel.Enabled = true;
+            Preview_panel.Visible = true;
+            Section_lbl.Visible = true;
+            NextButton.Visible = true;
+            Tips_lb.Visible = true;
+
+            NextButton.Content = "Next";
+
+            Mainform_panel.Controls.Clear();
+            Mainform_panel.Controls.Add(personal_Sec);
+            personal_Sec.Dock = DockStyle.Fill;
+        }
+
+
 
         private void ResetSidebarButtons()
         {

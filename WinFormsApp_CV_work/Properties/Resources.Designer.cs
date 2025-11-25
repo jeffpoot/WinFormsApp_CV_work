@@ -73,6 +73,26 @@ namespace WinFormsApp_CV_work.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download_down_arrow_save_icon_145992 {
+            get {
+                object obj = ResourceManager.GetObject("download_down_arrow_save_icon_145992", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_icon_icons_com_61193 {
+            get {
+                object obj = ResourceManager.GetObject("edit_icon-icons.com_61193", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap person_110935 {
             get {
                 object obj = ResourceManager.GetObject("person_110935", resourceCulture);
@@ -93,9 +113,19 @@ namespace WinFormsApp_CV_work.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Profileimg {
+        internal static System.Drawing.Bitmap save_button_icon_icons_com_72579 {
             get {
-                object obj = ResourceManager.GetObject("Profileimg", resourceCulture);
+                object obj = ResourceManager.GetObject("save-button_icon-icons.com_72579", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap template_icon_151052 {
+            get {
+                object obj = ResourceManager.GetObject("template_icon_151052", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -79,18 +79,26 @@ namespace WinFormsApp_CV_work
                 Mainform_panel.Controls.Clear();
                 Mainform_panel.Controls.Add(project_Sec);
                 project_Sec.Dock = DockStyle.Fill;
-                NextButton.Content = "Next";
+                NextButton.Content = "Finish";
             }
             else if (Mainform_panel.Controls.Contains(project_Sec))
             {
                 HighlightButton(Summary_bttn);
-
-                Section_lbl.Text = "Summary";
-                Mainform_panel.Controls.Clear();
-                Mainform_panel.Controls.Add(summary_Sec);
+                SummaryMain_pl.Visible = true;
+                SummaryMain_pl.Enabled = true;
+                SubForm_panel.Visible = false;
+                SummaryMain_pl.Controls.Clear();
+                SummaryMain_pl.Controls.Add(summary_Sec);
                 summary_Sec.Dock = DockStyle.Fill;
+                Mainform_panel.Visible = false;
+                Mainform_panel.Enabled = false;
+                Section_lbl.Visible = false;
+                Preview_lbl.Visible = false;
+                Preview_panel.Enabled = false;
+                Preview_panel.Visible = false;
+                Tips_lb.Visible = false;
 
-                NextButton.Content = "Finish";
+               
             }
 
         }
@@ -156,10 +164,18 @@ namespace WinFormsApp_CV_work
         {
             HighlightButton(Summary_bttn);
 
-            Section_lbl.Text = "Summary";
-            Mainform_panel.Controls.Clear();
-            Mainform_panel.Controls.Add(summary_Sec);
+            
+            SummaryMain_pl.Controls.Clear();
+            SummaryMain_pl.Controls.Add(summary_Sec);
             summary_Sec.Dock = DockStyle.Fill;
+            Mainform_panel.Visible = false;
+            Mainform_panel.Enabled = false;
+            Section_lbl.Visible = false;
+            Preview_lbl.Visible = false;
+            NextButton.Visible = false;
+            Preview_panel.Enabled = false;
+            Preview_panel.Visible = false;
+            Tips_lb.Visible = false;
         }
 
         private void ResetSidebarButtons()

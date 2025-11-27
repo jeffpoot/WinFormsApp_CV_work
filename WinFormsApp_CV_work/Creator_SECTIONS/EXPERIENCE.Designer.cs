@@ -140,8 +140,7 @@
             // 
             // EXPERIENCE
             // 
-            AutoScaleDimensions = new SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(245, 246, 255);
             Controls.Add(summaryTips_pl);
             Controls.Add(flowLayoutPanel1);

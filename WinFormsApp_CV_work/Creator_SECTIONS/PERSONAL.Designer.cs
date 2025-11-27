@@ -566,8 +566,7 @@
             // 
             // PERSONAL
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.Inherit;
             BackColor = Color.FromArgb(245, 246, 255);
             Controls.Add(cuiPanel4);
             Controls.Add(FemaleRadio);

@@ -90,7 +90,7 @@
             summarySave_bttn.ImageAutoCenter = true;
             summarySave_bttn.ImageExpand = new Point(0, 0);
             summarySave_bttn.ImageOffset = new Point(-3, 0);
-            summarySave_bttn.Location = new Point(360, 19);
+            summarySave_bttn.Location = new Point(358, 19);
             summarySave_bttn.Margin = new Padding(3, 2, 3, 2);
             summarySave_bttn.Name = "summarySave_bttn";
             summarySave_bttn.NormalBackground = Color.White;
@@ -142,7 +142,7 @@
             summaryEdit_bttn.PressedImageTint = Color.White;
             summaryEdit_bttn.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             summaryEdit_bttn.Rounding = new Padding(8);
-            summaryEdit_bttn.Size = new Size(44, 22);
+            summaryEdit_bttn.Size = new Size(53, 22);
             summaryEdit_bttn.TabIndex = 2;
             summaryEdit_bttn.TextAlignment = StringAlignment.Center;
             summaryEdit_bttn.TextOffset = new Point(0, 0);
@@ -168,7 +168,7 @@
             summaryDownload_bttn.ImageAutoCenter = true;
             summaryDownload_bttn.ImageExpand = new Point(0, 0);
             summaryDownload_bttn.ImageOffset = new Point(0, 0);
-            summaryDownload_bttn.Location = new Point(233, 19);
+            summaryDownload_bttn.Location = new Point(235, 19);
             summaryDownload_bttn.Margin = new Padding(3, 2, 3, 2);
             summaryDownload_bttn.Name = "summaryDownload_bttn";
             summaryDownload_bttn.NormalBackground = Color.White;
@@ -206,7 +206,7 @@
             summaryTemplate_bttn.ImageAutoCenter = true;
             summaryTemplate_bttn.ImageExpand = new Point(0, 0);
             summaryTemplate_bttn.ImageOffset = new Point(0, 0);
-            summaryTemplate_bttn.Location = new Point(73, 19);
+            summaryTemplate_bttn.Location = new Point(78, 19);
             summaryTemplate_bttn.Margin = new Padding(3, 2, 3, 2);
             summaryTemplate_bttn.Name = "summaryTemplate_bttn";
             summaryTemplate_bttn.NormalBackground = Color.White;

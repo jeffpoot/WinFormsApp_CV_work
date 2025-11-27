@@ -169,7 +169,7 @@
             ExpAddress_tbx.TabIndex = 9;
             ExpAddress_tbx.TextOffset = new Size(0, 0);
             ExpAddress_tbx.UnderlinedStyle = true;
-            ExpAddress_tbx.ContentChanged += ExpAddress_tbx_ContentChanged;
+
             // 
             // Compnyname_tbx
             // 

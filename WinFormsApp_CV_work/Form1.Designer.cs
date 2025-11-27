@@ -50,6 +50,8 @@
             NextButton = new CuoreUI.Controls.cuiButton();
             RandomTimer = new System.Windows.Forms.Timer(components);
             SummaryMain_pl = new Panel();
+            next_bttn_tip = new Label();
+            Back_bttn = new CuoreUI.Controls.cuiButton();
             ((System.ComponentModel.ISupportInitialize)Logo_Box).BeginInit();
             SubForm_panel.SuspendLayout();
             Sidepanel.SuspendLayout();
@@ -147,7 +149,7 @@
             Personal_bttn.HoverBackground = Color.Transparent;
             Personal_bttn.HoverForeColor = Color.Black;
             Personal_bttn.HoverImageTint = Color.Transparent;
-            Personal_bttn.HoverOutline = Color.FromArgb(136, 116, 249);
+            Personal_bttn.HoverOutline = Color.Transparent;
             Personal_bttn.Image = null;
             Personal_bttn.ImageAutoCenter = true;
             Personal_bttn.ImageExpand = new Point(0, 0);
@@ -170,7 +172,6 @@
             Personal_bttn.TabIndex = 0;
             Personal_bttn.TextAlignment = StringAlignment.Near;
             Personal_bttn.TextOffset = new Point(25, 0);
-            Personal_bttn.Click += Personal_bttn_Click;
             // 
             // Preview_panel
             // 
@@ -224,7 +225,7 @@
             Summary_bttn.HoverBackground = Color.Transparent;
             Summary_bttn.HoverForeColor = Color.Black;
             Summary_bttn.HoverImageTint = Color.Transparent;
-            Summary_bttn.HoverOutline = Color.FromArgb(136, 116, 249);
+            Summary_bttn.HoverOutline = Color.Transparent;
             Summary_bttn.Image = null;
             Summary_bttn.ImageAutoCenter = true;
             Summary_bttn.ImageExpand = new Point(0, 0);
@@ -247,7 +248,6 @@
             Summary_bttn.TabIndex = 8;
             Summary_bttn.TextAlignment = StringAlignment.Near;
             Summary_bttn.TextOffset = new Point(25, 0);
-            Summary_bttn.Click += Summary_bttn_Click;
             // 
             // Projects_bttn
             // 
@@ -265,7 +265,7 @@
             Projects_bttn.HoverBackground = Color.Transparent;
             Projects_bttn.HoverForeColor = Color.Black;
             Projects_bttn.HoverImageTint = Color.Transparent;
-            Projects_bttn.HoverOutline = Color.FromArgb(136, 116, 249);
+            Projects_bttn.HoverOutline = Color.Transparent;
             Projects_bttn.Image = null;
             Projects_bttn.ImageAutoCenter = true;
             Projects_bttn.ImageExpand = new Point(0, 0);
@@ -288,7 +288,6 @@
             Projects_bttn.TabIndex = 7;
             Projects_bttn.TextAlignment = StringAlignment.Near;
             Projects_bttn.TextOffset = new Point(25, 0);
-            Projects_bttn.Click += Projects_bttn_Click;
             // 
             // Skills_bttn
             // 
@@ -306,7 +305,7 @@
             Skills_bttn.HoverBackground = Color.Transparent;
             Skills_bttn.HoverForeColor = Color.Black;
             Skills_bttn.HoverImageTint = Color.Transparent;
-            Skills_bttn.HoverOutline = Color.FromArgb(136, 116, 249);
+            Skills_bttn.HoverOutline = Color.Transparent;
             Skills_bttn.Image = null;
             Skills_bttn.ImageAutoCenter = true;
             Skills_bttn.ImageExpand = new Point(0, 0);
@@ -329,7 +328,6 @@
             Skills_bttn.TabIndex = 6;
             Skills_bttn.TextAlignment = StringAlignment.Near;
             Skills_bttn.TextOffset = new Point(25, 0);
-            Skills_bttn.Click += Skills_bttn_Click;
             // 
             // Experience_bttn
             // 
@@ -347,7 +345,7 @@
             Experience_bttn.HoverBackground = Color.Transparent;
             Experience_bttn.HoverForeColor = Color.Black;
             Experience_bttn.HoverImageTint = Color.Transparent;
-            Experience_bttn.HoverOutline = Color.FromArgb(136, 116, 249);
+            Experience_bttn.HoverOutline = Color.Transparent;
             Experience_bttn.Image = null;
             Experience_bttn.ImageAutoCenter = true;
             Experience_bttn.ImageExpand = new Point(0, 0);
@@ -370,7 +368,6 @@
             Experience_bttn.TabIndex = 5;
             Experience_bttn.TextAlignment = StringAlignment.Near;
             Experience_bttn.TextOffset = new Point(25, 0);
-            Experience_bttn.Click += Experience_bttn_Click;
             // 
             // Education_bttn
             // 
@@ -388,7 +385,7 @@
             Education_bttn.HoverBackground = Color.Transparent;
             Education_bttn.HoverForeColor = Color.Black;
             Education_bttn.HoverImageTint = Color.Transparent;
-            Education_bttn.HoverOutline = Color.FromArgb(136, 116, 249);
+            Education_bttn.HoverOutline = Color.Transparent;
             Education_bttn.Image = null;
             Education_bttn.ImageAutoCenter = true;
             Education_bttn.ImageExpand = new Point(0, 0);
@@ -411,7 +408,6 @@
             Education_bttn.TabIndex = 4;
             Education_bttn.TextAlignment = StringAlignment.Near;
             Education_bttn.TextOffset = new Point(25, 0);
-            Education_bttn.Click += Education_bttn_Click;
             // 
             // Tips_lb
             // 
@@ -425,7 +421,7 @@
             Tips_lb.Size = new Size(441, 17);
             Tips_lb.TabIndex = 5;
             Tips_lb.Text = "Tip: Use action verbs like “Developed” or “Led” in your experience section.";
-            Tips_lb.TextAlign = ContentAlignment.MiddleCenter;
+            Tips_lb.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Section_lbl
             // 
@@ -473,7 +469,7 @@
             NextButton.ImageAutoCenter = true;
             NextButton.ImageExpand = new Point(0, 0);
             NextButton.ImageOffset = new Point(0, 0);
-            NextButton.Location = new Point(744, 638);
+            NextButton.Location = new Point(800, 640);
             NextButton.Margin = new Padding(3, 2, 3, 2);
             NextButton.Name = "NextButton";
             NextButton.NormalBackground = Color.FromArgb(136, 116, 249);
@@ -486,7 +482,7 @@
             NextButton.PressedImageTint = Color.White;
             NextButton.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             NextButton.Rounding = new Padding(8);
-            NextButton.Size = new Size(155, 30);
+            NextButton.Size = new Size(99, 30);
             NextButton.TabIndex = 9;
             NextButton.TextAlignment = StringAlignment.Center;
             NextButton.TextOffset = new Point(0, 0);
@@ -503,17 +499,72 @@
             SummaryMain_pl.Location = new Point(284, 0);
             SummaryMain_pl.Margin = new Padding(3, 2, 3, 2);
             SummaryMain_pl.Name = "SummaryMain_pl";
-            SummaryMain_pl.Size = new Size(1094, 675);
+            SummaryMain_pl.Size = new Size(1100, 680);
             SummaryMain_pl.TabIndex = 10;
             SummaryMain_pl.Visible = false;
             // 
+            // next_bttn_tip
+            // 
+            next_bttn_tip.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            next_bttn_tip.AutoSize = true;
+            next_bttn_tip.BackColor = Color.Transparent;
+            next_bttn_tip.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            next_bttn_tip.ForeColor = Color.FromArgb(74, 169, 89);
+            next_bttn_tip.Location = new Point(308, 648);
+            next_bttn_tip.Name = "next_bttn_tip";
+            next_bttn_tip.Size = new Size(291, 17);
+            next_bttn_tip.TabIndex = 11;
+            next_bttn_tip.Text = "Your progress updates only when you click Next.";
+            next_bttn_tip.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // Back_bttn
+            // 
+            Back_bttn.CheckButton = false;
+            Back_bttn.Checked = false;
+            Back_bttn.CheckedBackground = Color.FromArgb(255, 106, 0);
+            Back_bttn.CheckedForeColor = Color.White;
+            Back_bttn.CheckedImageTint = Color.White;
+            Back_bttn.CheckedOutline = Color.FromArgb(255, 106, 0);
+            Back_bttn.Content = "Back";
+            Back_bttn.DialogResult = DialogResult.None;
+            Back_bttn.Font = new Font("Microsoft Sans Serif", 9.75F);
+            Back_bttn.ForeColor = Color.White;
+            Back_bttn.HoverBackground = Color.FromArgb(125, 100, 200);
+            Back_bttn.HoverForeColor = Color.White;
+            Back_bttn.HoverImageTint = Color.White;
+            Back_bttn.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            Back_bttn.Image = null;
+            Back_bttn.ImageAutoCenter = true;
+            Back_bttn.ImageExpand = new Point(0, 0);
+            Back_bttn.ImageOffset = new Point(0, 0);
+            Back_bttn.Location = new Point(688, 640);
+            Back_bttn.Margin = new Padding(3, 2, 3, 2);
+            Back_bttn.Name = "Back_bttn";
+            Back_bttn.NormalBackground = Color.FromArgb(136, 116, 249);
+            Back_bttn.NormalForeColor = Color.White;
+            Back_bttn.NormalImageTint = Color.White;
+            Back_bttn.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            Back_bttn.OutlineThickness = 1F;
+            Back_bttn.PressedBackground = Color.WhiteSmoke;
+            Back_bttn.PressedForeColor = Color.FromArgb(32, 32, 32);
+            Back_bttn.PressedImageTint = Color.White;
+            Back_bttn.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            Back_bttn.Rounding = new Padding(8);
+            Back_bttn.Size = new Size(99, 30);
+            Back_bttn.TabIndex = 12;
+            Back_bttn.TextAlignment = StringAlignment.Center;
+            Back_bttn.TextOffset = new Point(0, 0);
+            Back_bttn.Click += Back_bttn_Click;
+            // 
             // CV_Creator_Form
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.Personal;
             ClientSize = new Size(1384, 677);
             Controls.Add(SummaryMain_pl);
+            Controls.Add(Back_bttn);
+            Controls.Add(next_bttn_tip);
             Controls.Add(NextButton);
             Controls.Add(Preview_lbl);
             Controls.Add(Section_lbl);
@@ -559,5 +610,7 @@
         private System.Windows.Forms.Timer RandomTimer;
         private CuoreUI.Controls.cuiPanel Mainform_panel;
         private Panel SummaryMain_pl;
+        private Label next_bttn_tip;
+        private CuoreUI.Controls.cuiButton Back_bttn;
     }
 }

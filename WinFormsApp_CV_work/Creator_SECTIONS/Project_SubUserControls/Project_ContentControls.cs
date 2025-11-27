@@ -19,8 +19,13 @@ namespace WinFormsApp_CV_work.Creator_SECTIONS.Project_SubUserControls
 
         private void ProjectRMV_tbx_Click(object sender, EventArgs e)
         {
-            this.Parent.Controls.Remove(this);
-            this.Dispose();
+            DialogResult result = MessageBox.Show("Are you sure you want to remove this?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Parent.Controls.Remove(this);
+                this.Dispose();
+            }
         }
 
         

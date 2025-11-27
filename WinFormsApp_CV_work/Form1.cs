@@ -15,7 +15,7 @@ namespace WinFormsApp_CV_work
 
         private Random random = new Random();
 
-        
+        int next_bttn_count = 0;
 
 
         public CV_Creator_Form()
@@ -31,7 +31,7 @@ namespace WinFormsApp_CV_work
             Mainform_panel.Controls.Clear();
             Mainform_panel.Controls.Add(personal_Sec);
             personal_Sec.Dock = DockStyle.Fill;
-
+            Back_bttn.Visible = false;
             HighlightButton(Personal_bttn);
 
             RandomTimer.Start();
@@ -57,6 +57,8 @@ namespace WinFormsApp_CV_work
                 Mainform_panel.Controls.Add(education_Sec);
                 education_Sec.Dock = DockStyle.Fill;
                 NextButton.Content = "Next";
+                Back_bttn.Visible = true;
+                next_bttn_count += 1;
             }
             else if (Mainform_panel.Controls.Contains(education_Sec))
             {
@@ -67,6 +69,8 @@ namespace WinFormsApp_CV_work
                 Mainform_panel.Controls.Add(experience_Sec);
                 experience_Sec.Dock = DockStyle.Fill;
                 NextButton.Content = "Next";
+                
+                next_bttn_count += 1;
             }
             else if (Mainform_panel.Controls.Contains(experience_Sec))
             {
@@ -77,6 +81,8 @@ namespace WinFormsApp_CV_work
                 Mainform_panel.Controls.Add(skills_Sec);
                 skills_Sec.Dock = DockStyle.Fill;
                 NextButton.Content = "Next";
+
+                next_bttn_count += 1;
             }
             else if (Mainform_panel.Controls.Contains(skills_Sec))
             {
@@ -87,23 +93,51 @@ namespace WinFormsApp_CV_work
                 Mainform_panel.Controls.Add(project_Sec);
                 project_Sec.Dock = DockStyle.Fill;
                 NextButton.Content = "Finish";
+
+                next_bttn_count += 1;
             }
             else if (Mainform_panel.Controls.Contains(project_Sec))
             {
-                HighlightButton(Summary_bttn);
-                SummaryMain_pl.Visible = true;
-                SummaryMain_pl.Enabled = true;
-                SubForm_panel.Visible = false;
-                SummaryMain_pl.Controls.Clear();
-                SummaryMain_pl.Controls.Add(summary_Sec);
-                summary_Sec.Dock = DockStyle.Fill;
-                Mainform_panel.Visible = false;
-                Mainform_panel.Enabled = false;
-                Section_lbl.Visible = false;
-                Preview_lbl.Visible = false;
-                Preview_panel.Enabled = false;
-                Preview_panel.Visible = false;
-                Tips_lb.Visible = false;  
+                if (next_bttn_count == 4)
+                {
+                    //summary handler
+                    HighlightButton(Summary_bttn);
+                    SummaryMain_pl.Visible = true;
+                    SummaryMain_pl.Enabled = true;
+                    SubForm_panel.Visible = false;
+                    SummaryMain_pl.Controls.Clear();
+                    SummaryMain_pl.Controls.Add(summary_Sec);
+                    summary_Sec.Dock = DockStyle.Fill;
+                    Mainform_panel.Visible = false;
+                    Mainform_panel.Enabled = false;
+                    Section_lbl.Visible = false;
+                    Preview_lbl.Visible = false;
+                    Preview_panel.Enabled = false;
+                    Preview_panel.Visible = false;
+                    Tips_lb.Visible = false;
+                    next_bttn_tip.Visible = false;
+
+
+
+                    //recolor other buttons
+                    Personal_bttn.ForeColor = Color.FromArgb(224, 224, 224);
+                    Experience_bttn.ForeColor = Color.FromArgb(224, 224, 224);
+                    Education_bttn.ForeColor = Color.FromArgb(224, 224, 224);
+                    Skills_bttn.ForeColor = Color.FromArgb(224, 224, 224);
+                    Projects_bttn.ForeColor = Color.FromArgb(224, 224, 224);
+
+                    //disable other buttons 
+                    Personal_bttn.Enabled = false;
+                    Experience_bttn.Enabled = false;
+                    Education_bttn.Enabled = false;
+                    Skills_bttn.Enabled = false;
+                    Projects_bttn.Enabled = false;
+
+
+                    Back_bttn.Visible = false;
+
+                }
+
             }
             else
             {
@@ -121,85 +155,72 @@ namespace WinFormsApp_CV_work
 
         }
 
-        private void Personal_bttn_Click(object sender, EventArgs e)
+        private void Back_bttn_Click(object sender, EventArgs e)
         {
-            HighlightButton(Personal_bttn);
+            if (Mainform_panel.Controls.Contains(project_Sec)) 
+            {
+                HighlightButton(Skills_bttn);
+                Section_lbl.Text = "Skills";
+                Mainform_panel.Controls.Clear();
+                Mainform_panel.Controls.Add(skills_Sec);
+                skills_Sec.Dock = DockStyle.Fill;
+                NextButton.Content = "Next";
 
-            Section_lbl.Text = "Personal";
-            Mainform_panel.Controls.Clear();
-            Mainform_panel.Controls.Add(personal_Sec);
-            personal_Sec.Dock = DockStyle.Fill;
+                next_bttn_count -= 1;
+            }
+            else if (Mainform_panel.Controls.Contains(skills_Sec))
+            {
+                HighlightButton(Experience_bttn);
+                Section_lbl.Text = "Experience";
+                Mainform_panel.Controls.Clear();
+                Mainform_panel.Controls.Add(experience_Sec);
+                experience_Sec.Dock = DockStyle.Fill;
+                NextButton.Content = "Next";
 
-        }
+                next_bttn_count -= 1;
+            }
+            else if (Mainform_panel.Controls.Contains(experience_Sec))
+            {
+                HighlightButton(Education_bttn);
+                Section_lbl.Text = "Education";
+                Mainform_panel.Controls.Clear();
+                Mainform_panel.Controls.Add(education_Sec);
+                education_Sec.Dock = DockStyle.Fill;
+                NextButton.Content = "Next";
 
-        private void Education_bttn_Click(object sender, EventArgs e)
-        {
-            HighlightButton(Education_bttn);
-
-            Section_lbl.Text = "Education";
-            Mainform_panel.Controls.Clear();
-            Mainform_panel.Controls.Add(education_Sec);
-            education_Sec.Dock = DockStyle.Fill;
-
-
-
-        }
-
-        private void Experience_bttn_Click(object sender, EventArgs e)
-        {
-            HighlightButton(Experience_bttn);
-
-            Section_lbl.Text = "Experience";
-            Mainform_panel.Controls.Clear();
-            Mainform_panel.Controls.Add(experience_Sec);
-            experience_Sec.Dock = DockStyle.Fill;
-
-        }
-
-        private void Skills_bttn_Click(object sender, EventArgs e)
-        {
-            HighlightButton(Skills_bttn);
-
-            Section_lbl.Text = "Skills";
-            Mainform_panel.Controls.Clear();
-            Mainform_panel.Controls.Add(skills_Sec);
-            skills_Sec.Dock = DockStyle.Fill;
-
-        }
-
-        private void Projects_bttn_Click(object sender, EventArgs e)
-        {
-            HighlightButton(Projects_bttn);
-
-            Section_lbl.Text = "Projects";
-            Mainform_panel.Controls.Clear();
-            Mainform_panel.Controls.Add(project_Sec);
-            project_Sec.Dock = DockStyle.Fill;
-
-            NextButton.Content = "Next";
-
-        }
-
-        private void Summary_bttn_Click(object sender, EventArgs e)
-        {
-            HighlightButton(Summary_bttn);
-            SummaryMain_pl.Visible = true;
-            SummaryMain_pl.Enabled = true;
-            SubForm_panel.Visible = false;
-            SummaryMain_pl.Controls.Clear();
-            SummaryMain_pl.Controls.Add(summary_Sec);
-            summary_Sec.Dock = DockStyle.Fill;
-            Mainform_panel.Visible = false;
-            Mainform_panel.Enabled = false;
-            Section_lbl.Visible = false;
-            Preview_lbl.Visible = false;
-            Preview_panel.Enabled = false;
-            Preview_panel.Visible = false;
-            Tips_lb.Visible = false;
+                next_bttn_count -= 1;
+            }
+            else if (Mainform_panel.Controls.Contains(education_Sec))
+            {
+                HighlightButton(Personal_bttn);
+                Section_lbl.Text = "Personal";
+                Mainform_panel.Controls.Clear();
+                Mainform_panel.Controls.Add(personal_Sec);
+                personal_Sec.Dock = DockStyle.Fill;
+                NextButton.Content = "Next";
+                Back_bttn.Visible = false;  
+                next_bttn_count -= 1;
+            }
         }
 
         private void Summary_EditClicked(object sender, EventArgs e)
         {
+
+            //enable other buttons 
+            Personal_bttn.Enabled = true;
+            Experience_bttn.Enabled = true;
+            Education_bttn.Enabled = true;
+            Skills_bttn.Enabled = true;
+            Projects_bttn.Enabled = true;
+
+            //recolor other buttons
+            Personal_bttn.ForeColor = Color.FromArgb(30, 41, 57);
+            Education_bttn.ForeColor = Color.FromArgb(30, 41, 57);
+            Experience_bttn.ForeColor = Color.FromArgb(30, 41, 57);
+            Skills_bttn.ForeColor = Color.FromArgb(30, 41, 57);
+            Projects_bttn.ForeColor = Color.FromArgb(30, 41, 57);
+
+
             HighlightButton(Personal_bttn);
             Section_lbl.Text = "Personal";
 
@@ -216,12 +237,17 @@ namespace WinFormsApp_CV_work
             Section_lbl.Visible = true;
             NextButton.Visible = true;
             Tips_lb.Visible = true;
+            next_bttn_tip.Visible = true;
+            Back_bttn.Visible = false;
+
 
             NextButton.Content = "Next";
 
             Mainform_panel.Controls.Clear();
             Mainform_panel.Controls.Add(personal_Sec);
             personal_Sec.Dock = DockStyle.Fill;
+
+            next_bttn_count = 0;
         }
 
 
@@ -241,7 +267,7 @@ namespace WinFormsApp_CV_work
             foreach (cuiButton btn in buttons)
             {
                 btn.BackColor = Color.Transparent;
-                btn.ForeColor = Color.Black;
+                btn.ForeColor = Color.FromArgb(30, 41, 57);
                 btn.HoverForeColor = Color.Black;
                 btn.TextOffset = new Point(25, 0);
             }
@@ -286,5 +312,7 @@ namespace WinFormsApp_CV_work
             int index = random.Next(Tip_Messages.Count);
             Tips_lb.Text = Tip_Messages[index];
         }
+
+        
     }
 }

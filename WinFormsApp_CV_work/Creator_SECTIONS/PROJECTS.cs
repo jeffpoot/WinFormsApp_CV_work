@@ -29,8 +29,13 @@ namespace WinFormsApp_CV_work.Creator_SECTIONS
 
         private void SkillsAdd_btt_Click(object sender, EventArgs e)
         {
-            Project_ContentControls project_ContentControls= new Project_ContentControls();
+            Project_ContentControls project_ContentControls = new Project_ContentControls();
             flowLayoutPanel1.Controls.Add(project_ContentControls);
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

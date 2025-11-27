@@ -44,14 +44,14 @@
             // 
             // cuiPanel1
             // 
-            cuiPanel1.Location = new Point(296, 19);
+            cuiPanel1.Location = new Point(325, 19);
             cuiPanel1.Margin = new Padding(3, 2, 3, 2);
             cuiPanel1.Name = "cuiPanel1";
             cuiPanel1.OutlineThickness = 1F;
             cuiPanel1.PanelColor = Color.White;
             cuiPanel1.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel1.Rounding = new Padding(20);
-            cuiPanel1.Size = new Size(503, 562);
+            cuiPanel1.Size = new Size(720, 710);
             cuiPanel1.TabIndex = 0;
             // 
             // cuiPanel2
@@ -60,14 +60,14 @@
             cuiPanel2.Controls.Add(summaryEdit_bttn);
             cuiPanel2.Controls.Add(summaryDownload_bttn);
             cuiPanel2.Controls.Add(summaryTemplate_bttn);
-            cuiPanel2.Location = new Point(328, 600);
+            cuiPanel2.Location = new Point(385, 752);
             cuiPanel2.Margin = new Padding(3, 2, 3, 2);
             cuiPanel2.Name = "cuiPanel2";
             cuiPanel2.OutlineThickness = 1F;
             cuiPanel2.PanelColor = Color.White;
             cuiPanel2.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel2.Rounding = new Padding(10);
-            cuiPanel2.Size = new Size(438, 60);
+            cuiPanel2.Size = new Size(600, 74);
             cuiPanel2.TabIndex = 1;
             // 
             // summarySave_bttn
@@ -90,7 +90,7 @@
             summarySave_bttn.ImageAutoCenter = true;
             summarySave_bttn.ImageExpand = new Point(0, 0);
             summarySave_bttn.ImageOffset = new Point(-3, 0);
-            summarySave_bttn.Location = new Point(358, 19);
+            summarySave_bttn.Location = new Point(470, 15);
             summarySave_bttn.Margin = new Padding(3, 2, 3, 2);
             summarySave_bttn.Name = "summarySave_bttn";
             summarySave_bttn.NormalBackground = Color.White;
@@ -103,7 +103,7 @@
             summarySave_bttn.PressedImageTint = Color.White;
             summarySave_bttn.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             summarySave_bttn.Rounding = new Padding(8);
-            summarySave_bttn.Size = new Size(66, 22);
+            summarySave_bttn.Size = new Size(82, 44);
             summarySave_bttn.TabIndex = 3;
             summarySave_bttn.TextAlignment = StringAlignment.Center;
             summarySave_bttn.TextOffset = new Point(0, 0);
@@ -129,7 +129,7 @@
             summaryEdit_bttn.ImageAutoCenter = true;
             summaryEdit_bttn.ImageExpand = new Point(0, 0);
             summaryEdit_bttn.ImageOffset = new Point(0, 0);
-            summaryEdit_bttn.Location = new Point(11, 19);
+            summaryEdit_bttn.Location = new Point(49, 15);
             summaryEdit_bttn.Margin = new Padding(3, 2, 3, 2);
             summaryEdit_bttn.Name = "summaryEdit_bttn";
             summaryEdit_bttn.NormalBackground = Color.White;
@@ -142,7 +142,7 @@
             summaryEdit_bttn.PressedImageTint = Color.White;
             summaryEdit_bttn.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             summaryEdit_bttn.Rounding = new Padding(8);
-            summaryEdit_bttn.Size = new Size(53, 22);
+            summaryEdit_bttn.Size = new Size(67, 44);
             summaryEdit_bttn.TabIndex = 2;
             summaryEdit_bttn.TextAlignment = StringAlignment.Center;
             summaryEdit_bttn.TextOffset = new Point(0, 0);
@@ -168,7 +168,7 @@
             summaryDownload_bttn.ImageAutoCenter = true;
             summaryDownload_bttn.ImageExpand = new Point(0, 0);
             summaryDownload_bttn.ImageOffset = new Point(0, 0);
-            summaryDownload_bttn.Location = new Point(235, 19);
+            summaryDownload_bttn.Location = new Point(339, 15);
             summaryDownload_bttn.Margin = new Padding(3, 2, 3, 2);
             summaryDownload_bttn.Name = "summaryDownload_bttn";
             summaryDownload_bttn.NormalBackground = Color.White;
@@ -181,7 +181,7 @@
             summaryDownload_bttn.PressedImageTint = Color.White;
             summaryDownload_bttn.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             summaryDownload_bttn.Rounding = new Padding(8);
-            summaryDownload_bttn.Size = new Size(109, 22);
+            summaryDownload_bttn.Size = new Size(109, 44);
             summaryDownload_bttn.TabIndex = 1;
             summaryDownload_bttn.TextAlignment = StringAlignment.Center;
             summaryDownload_bttn.TextOffset = new Point(0, 0);
@@ -206,7 +206,7 @@
             summaryTemplate_bttn.ImageAutoCenter = true;
             summaryTemplate_bttn.ImageExpand = new Point(0, 0);
             summaryTemplate_bttn.ImageOffset = new Point(0, 0);
-            summaryTemplate_bttn.Location = new Point(78, 19);
+            summaryTemplate_bttn.Location = new Point(138, 15);
             summaryTemplate_bttn.Margin = new Padding(3, 2, 3, 2);
             summaryTemplate_bttn.Name = "summaryTemplate_bttn";
             summaryTemplate_bttn.NormalBackground = Color.White;
@@ -219,7 +219,7 @@
             summaryTemplate_bttn.PressedImageTint = Color.White;
             summaryTemplate_bttn.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             summaryTemplate_bttn.Rounding = new Padding(8);
-            summaryTemplate_bttn.Size = new Size(143, 22);
+            summaryTemplate_bttn.Size = new Size(179, 44);
             summaryTemplate_bttn.TabIndex = 0;
             summaryTemplate_bttn.TextAlignment = StringAlignment.Center;
             summaryTemplate_bttn.TextOffset = new Point(0, 0);
@@ -229,14 +229,14 @@
             summaryTips_pl.Controls.Add(summaryTips2_lb);
             summaryTips_pl.Controls.Add(summaryTipsDot_pl);
             summaryTips_pl.Controls.Add(summaryTips_lb);
-            summaryTips_pl.Location = new Point(22, 19);
+            summaryTips_pl.Location = new Point(16, 19);
             summaryTips_pl.Margin = new Padding(3, 2, 3, 2);
             summaryTips_pl.Name = "summaryTips_pl";
             summaryTips_pl.OutlineThickness = 1F;
             summaryTips_pl.PanelColor = Color.White;
             summaryTips_pl.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             summaryTips_pl.Rounding = new Padding(20);
-            summaryTips_pl.Size = new Size(262, 56);
+            summaryTips_pl.Size = new Size(298, 56);
             summaryTips_pl.TabIndex = 2;
             // 
             // summaryTips2_lb
@@ -246,13 +246,13 @@
             summaryTips2_lb.ForeColor = Color.FromArgb(136, 116, 249);
             summaryTips2_lb.Location = new Point(10, 32);
             summaryTips2_lb.Name = "summaryTips2_lb";
-            summaryTips2_lb.Size = new Size(225, 15);
+            summaryTips2_lb.Size = new Size(283, 20);
             summaryTips2_lb.TabIndex = 1;
             summaryTips2_lb.Text = "Double-check your info before exporting.";
             // 
             // summaryTipsDot_pl
             // 
-            summaryTipsDot_pl.Location = new Point(234, 4);
+            summaryTipsDot_pl.Location = new Point(264, 6);
             summaryTipsDot_pl.Margin = new Padding(3, 2, 3, 2);
             summaryTipsDot_pl.MaximumSize = new Size(20, 20);
             summaryTipsDot_pl.MinimumSize = new Size(20, 20);
@@ -271,7 +271,7 @@
             summaryTips_lb.ForeColor = Color.FromArgb(0, 192, 0);
             summaryTips_lb.Location = new Point(10, 14);
             summaryTips_lb.Name = "summaryTips_lb";
-            summaryTips_lb.Size = new Size(71, 15);
+            summaryTips_lb.Size = new Size(90, 20);
             summaryTips_lb.TabIndex = 0;
             summaryTips_lb.Text = "Looks great!";
             // 
@@ -280,12 +280,13 @@
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(245, 246, 255);
             BackgroundImage = Properties.Resources.Personal;
-            Controls.Add(summaryTips_pl);
             Controls.Add(cuiPanel2);
+            Controls.Add(summaryTips_pl);
             Controls.Add(cuiPanel1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "SUMMARY";
-            Size = new Size(1094, 675);
+            RightToLeft = RightToLeft.No;
+            Size = new Size(1370, 850);
             cuiPanel2.ResumeLayout(false);
             summaryTips_pl.ResumeLayout(false);
             summaryTips_pl.PerformLayout();

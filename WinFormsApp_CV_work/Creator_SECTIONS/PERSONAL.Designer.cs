@@ -37,10 +37,8 @@
             Country_lb = new Label();
             city_lb = new Label();
             phone_lb = new Label();
-            address_lb = new Label();
             Email_txb = new CuoreUI.Controls.cuiTextBox();
             Age_txb = new CuoreUI.Controls.cuiTextBox();
-            Address_txb = new CuoreUI.Controls.cuiTextBox();
             PersonUP_bttn = new CuoreUI.Controls.cuiButton();
             PersonRMV_bttn = new CuoreUI.Controls.cuiButton();
             label12 = new Label();
@@ -60,23 +58,32 @@
             Country_ComboBx = new ComboBox();
             cuiTooltipHover1 = new CuoreUI.Components.cuiTooltipHover(components);
             Prj_openFileDialog = new OpenFileDialog();
+            Birthday_lb = new Label();
+            Birthday_DatePicker = new CuoreUI.Controls.cuiCalendarDatePicker();
+            cuiPanel5 = new CuoreUI.Controls.cuiPanel();
+            Nationality_cb = new ComboBox();
+            Nationality_lb = new Label();
+            FullAddress_txb = new CuoreUI.Controls.cuiTextBox();
+            FullAddress_lb = new Label();
             ((System.ComponentModel.ISupportInitialize)Personal_pb).BeginInit();
             cuiPanel1.SuspendLayout();
             cuiPanel2.SuspendLayout();
             cuiPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MisplacedFix_img).BeginInit();
             cuiPanel4.SuspendLayout();
+            cuiPanel5.SuspendLayout();
             SuspendLayout();
             // 
             // name_lb
             // 
             name_lb.AutoSize = true;
             name_lb.ForeColor = Color.FromArgb(30, 41, 57);
-            name_lb.Location = new Point(21, 13);
+            name_lb.Location = new Point(90, 18);
             name_lb.Name = "name_lb";
-            name_lb.Size = new Size(45, 15);
+            name_lb.Size = new Size(52, 20);
             name_lb.TabIndex = 0;
-            name_lb.Text = " Name:";
+            name_lb.Text = "Name:";
+            name_lb.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // PernalN_txb
             // 
@@ -90,13 +97,13 @@
             PernalN_txb.Image = null;
             PernalN_txb.ImageExpand = new Point(0, 0);
             PernalN_txb.ImageOffset = new Point(0, 0);
-            PernalN_txb.Location = new Point(21, 36);
+            PernalN_txb.Location = new Point(92, 42);
             PernalN_txb.Margin = new Padding(2);
             PernalN_txb.Multiline = false;
             PernalN_txb.Name = "PernalN_txb";
             PernalN_txb.NormalImageTint = Color.White;
             PernalN_txb.OutlineColor = Color.FromArgb(128, 128, 128, 128);
-            PernalN_txb.Padding = new Padding(16, 7, 16, 0);
+            PernalN_txb.Padding = new Padding(20, 5, 20, 0);
             PernalN_txb.PasswordChar = false;
             PernalN_txb.PlaceholderColor = Color.LightGray;
             PernalN_txb.PlaceholderText = "Enter Name:";
@@ -110,19 +117,20 @@
             // 
             Email_lb.AutoSize = true;
             Email_lb.ForeColor = Color.FromArgb(30, 41, 57);
-            Email_lb.Location = new Point(25, 74);
+            Email_lb.Location = new Point(90, 84);
             Email_lb.Name = "Email_lb";
-            Email_lb.Size = new Size(39, 15);
+            Email_lb.Size = new Size(49, 20);
             Email_lb.TabIndex = 8;
             Email_lb.Text = "Email:";
+            Email_lb.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // age_lb
             // 
             age_lb.AutoSize = true;
             age_lb.ForeColor = Color.FromArgb(30, 41, 57);
-            age_lb.Location = new Point(25, 270);
+            age_lb.Location = new Point(324, 150);
             age_lb.Name = "age_lb";
-            age_lb.Size = new Size(31, 15);
+            age_lb.Size = new Size(39, 20);
             age_lb.TabIndex = 9;
             age_lb.Text = "Age:";
             // 
@@ -130,41 +138,34 @@
             // 
             Country_lb.AutoSize = true;
             Country_lb.ForeColor = Color.FromArgb(30, 41, 57);
-            Country_lb.Location = new Point(25, 198);
+            Country_lb.Location = new Point(90, 216);
             Country_lb.Name = "Country_lb";
-            Country_lb.Size = new Size(53, 15);
+            Country_lb.Size = new Size(63, 20);
             Country_lb.TabIndex = 10;
             Country_lb.Text = "Country:";
+            Country_lb.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // city_lb
             // 
             city_lb.AutoSize = true;
             city_lb.ForeColor = Color.FromArgb(30, 41, 57);
-            city_lb.Location = new Point(137, 269);
+            city_lb.Location = new Point(432, 216);
             city_lb.Name = "city_lb";
-            city_lb.Size = new Size(31, 15);
+            city_lb.Size = new Size(37, 20);
             city_lb.TabIndex = 11;
             city_lb.Text = "City:";
+            city_lb.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // phone_lb
             // 
             phone_lb.AutoSize = true;
             phone_lb.ForeColor = Color.FromArgb(30, 41, 57);
-            phone_lb.Location = new Point(257, 200);
+            phone_lb.Location = new Point(90, 282);
             phone_lb.Name = "phone_lb";
-            phone_lb.Size = new Size(71, 15);
+            phone_lb.Size = new Size(87, 20);
             phone_lb.TabIndex = 12;
             phone_lb.Text = "Contact No:";
-            // 
-            // address_lb
-            // 
-            address_lb.AutoSize = true;
-            address_lb.ForeColor = Color.FromArgb(30, 41, 57);
-            address_lb.Location = new Point(25, 135);
-            address_lb.Name = "address_lb";
-            address_lb.Size = new Size(52, 15);
-            address_lb.TabIndex = 13;
-            address_lb.Text = "Address:";
+            phone_lb.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Email_txb
             // 
@@ -178,13 +179,13 @@
             Email_txb.Image = null;
             Email_txb.ImageExpand = new Point(0, 0);
             Email_txb.ImageOffset = new Point(0, 0);
-            Email_txb.Location = new Point(25, 97);
+            Email_txb.Location = new Point(96, 108);
             Email_txb.Margin = new Padding(2);
             Email_txb.Multiline = false;
             Email_txb.Name = "Email_txb";
             Email_txb.NormalImageTint = Color.White;
             Email_txb.OutlineColor = Color.FromArgb(128, 128, 128, 128);
-            Email_txb.Padding = new Padding(16, 7, 16, 0);
+            Email_txb.Padding = new Padding(20, 5, 20, 0);
             Email_txb.PasswordChar = false;
             Email_txb.PlaceholderColor = Color.LightGray;
             Email_txb.PlaceholderText = "Enter Your Email";
@@ -206,13 +207,13 @@
             Age_txb.Image = null;
             Age_txb.ImageExpand = new Point(0, 0);
             Age_txb.ImageOffset = new Point(0, 0);
-            Age_txb.Location = new Point(25, 288);
+            Age_txb.Location = new Point(324, 174);
             Age_txb.Margin = new Padding(2);
             Age_txb.Multiline = false;
             Age_txb.Name = "Age_txb";
             Age_txb.NormalImageTint = Color.White;
             Age_txb.OutlineColor = Color.FromArgb(128, 128, 128, 128);
-            Age_txb.Padding = new Padding(16, 7, 16, 0);
+            Age_txb.Padding = new Padding(20, 5, 20, 0);
             Age_txb.PasswordChar = false;
             Age_txb.PlaceholderColor = Color.LightGray;
             Age_txb.PlaceholderText = "";
@@ -221,34 +222,6 @@
             Age_txb.TabIndex = 15;
             Age_txb.TextOffset = new Size(0, 0);
             Age_txb.UnderlinedStyle = true;
-            // 
-            // Address_txb
-            // 
-            Address_txb.BackgroundColor = Color.White;
-            Address_txb.Content = "";
-            Address_txb.FocusBackgroundColor = Color.White;
-            Address_txb.FocusImageTint = Color.White;
-            Address_txb.FocusOutlineColor = Color.FromArgb(255, 106, 0);
-            Address_txb.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Address_txb.ForeColor = Color.FromArgb(30, 41, 57);
-            Address_txb.Image = null;
-            Address_txb.ImageExpand = new Point(0, 0);
-            Address_txb.ImageOffset = new Point(0, 0);
-            Address_txb.Location = new Point(25, 158);
-            Address_txb.Margin = new Padding(2);
-            Address_txb.Multiline = false;
-            Address_txb.Name = "Address_txb";
-            Address_txb.NormalImageTint = Color.White;
-            Address_txb.OutlineColor = Color.FromArgb(128, 128, 128, 128);
-            Address_txb.Padding = new Padding(16, 7, 16, 0);
-            Address_txb.PasswordChar = false;
-            Address_txb.PlaceholderColor = Color.LightGray;
-            Address_txb.PlaceholderText = "Enter Your Address";
-            Address_txb.Rounding = new Padding(8);
-            Address_txb.Size = new Size(528, 30);
-            Address_txb.TabIndex = 19;
-            Address_txb.TextOffset = new Size(0, 0);
-            Address_txb.UnderlinedStyle = true;
             // 
             // PersonUP_bttn
             // 
@@ -273,7 +246,7 @@
             PersonUP_bttn.ImageAutoCenter = true;
             PersonUP_bttn.ImageExpand = new Point(0, 0);
             PersonUP_bttn.ImageOffset = new Point(0, 0);
-            PersonUP_bttn.Location = new Point(169, 507);
+            PersonUP_bttn.Location = new Point(313, 649);
             PersonUP_bttn.Margin = new Padding(0);
             PersonUP_bttn.Name = "PersonUP_bttn";
             PersonUP_bttn.NormalBackground = Color.FromArgb(105, 230, 124);
@@ -315,7 +288,7 @@
             PersonRMV_bttn.ImageAutoCenter = true;
             PersonRMV_bttn.ImageExpand = new Point(0, 0);
             PersonRMV_bttn.ImageOffset = new Point(0, 0);
-            PersonRMV_bttn.Location = new Point(366, 507);
+            PersonRMV_bttn.Location = new Point(510, 649);
             PersonRMV_bttn.Margin = new Padding(0);
             PersonRMV_bttn.Name = "PersonRMV_bttn";
             PersonRMV_bttn.NormalBackground = Color.FromArgb(253, 63, 42);
@@ -338,9 +311,9 @@
             // 
             label12.AutoSize = true;
             label12.ForeColor = Color.FromArgb(30, 41, 57);
-            label12.Location = new Point(11, 343);
+            label12.Location = new Point(90, 420);
             label12.Name = "label12";
-            label12.Size = new Size(106, 15);
+            label12.Size = new Size(132, 20);
             label12.TabIndex = 22;
             label12.Text = "Professional Photo";
             // 
@@ -348,11 +321,11 @@
             // 
             label11.AutoSize = true;
             label11.BackColor = Color.Transparent;
-            label11.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.Font = new Font("Segoe UI", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.FromArgb(30, 41, 57);
-            label11.Location = new Point(27, 13);
+            label11.Location = new Point(4, 10);
             label11.Name = "label11";
-            label11.Size = new Size(354, 78);
+            label11.Size = new Size(401, 102);
             label11.TabIndex = 0;
             label11.Text = resources.GetString("label11.Text");
             // 
@@ -371,7 +344,7 @@
             // cuiPanel1
             // 
             cuiPanel1.Controls.Add(Personal_pb);
-            cuiPanel1.Location = new Point(16, 368);
+            cuiPanel1.Location = new Point(90, 450);
             cuiPanel1.Name = "cuiPanel1";
             cuiPanel1.OutlineThickness = 1F;
             cuiPanel1.PanelColor = Color.White;
@@ -383,20 +356,20 @@
             // cuiPanel2
             // 
             cuiPanel2.Controls.Add(label11);
-            cuiPanel2.Location = new Point(157, 368);
+            cuiPanel2.Location = new Point(222, 444);
             cuiPanel2.Name = "cuiPanel2";
             cuiPanel2.OutlineThickness = 1F;
             cuiPanel2.PanelColor = Color.White;
             cuiPanel2.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel2.Rounding = new Padding(15);
-            cuiPanel2.Size = new Size(408, 104);
+            cuiPanel2.Size = new Size(408, 122);
             cuiPanel2.TabIndex = 28;
             // 
             // Contact_ComboBox
             // 
             Contact_ComboBox.DropDownWidth = 100;
             Contact_ComboBox.FlatStyle = FlatStyle.Flat;
-            Contact_ComboBox.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Contact_ComboBox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Contact_ComboBox.ForeColor = Color.FromArgb(30, 41, 57);
             Contact_ComboBox.FormattingEnabled = true;
             Contact_ComboBox.Items.AddRange(new object[] { "+93", "+355", "+213", "+376", "+244", "+1-268", "+54", "+374", "+61", "+43", "+994", "+1-242", "+973", "+880", "+1-246", "+375", "+32", "+501", "+229", "+975", "+591", "+387", "+267", "+55", "+673", "+359", "+226", "+257", "+238", "+855", "+237", "+1", "+236", "+235", "+56", "+86", "+57", "+269", "+242", "+506", "+385", "+53", "+357", "+420", "+243", "+45", "+253", "+1-767", "+1-809", "+593", "+20", "+503", "+240", "+291", "+372", "+268", "+251", "+679", "+358", "+33", "+241", "+220", "+995", "+49", "+233", "+30", "+1-473", "+502", "+224", "+245", "+592", "+509", "+504", "+36", "+354", "+91", "+62", "+98", "+964", "+353", "+972", "+39", "+1-876", "+81", "+962", "+7", "+254", "+686", "+965", "+996", "+856", "+371", "+961", "+266", "+231", "+218", "+423", "+370", "+352", "+261", "+265", "+60", "+960", "+223", "+356", "+692", "+222", "+230", "+52", "+691", "+373", "+377", "+976", "+382", "+212", "+258", "+95", "+264", "+674", "+977", "+31", "+64", "+505", "+227", "+234", "+850", "+389", "+47", "+968", "+92", "+680", "+970", "+507", "+675", "+595", "+51", "+63", "+48", "+351", "+974", "+40", "+7", "+250", "+1-869", "+1-758", "+1-784", "+685", "+378", "+239", "+966", "+221", "+381", "+248", "+232", "+65", "+421", "+386", "+677", "+252", "+27", "+82", "+211", "+34", "+94", "+249", "+597", "+268", "+46", "+41", "+963", "+886", "+992", "+255", "+66", "+670", "+228", "+676", "+1-868", "+216", "+90", "+993", "+688", "+256", "+380", "+971", "+44", "+1", "+598", "+998", "+678", "+379", "+58", "+84", "+681", "+967", "+260", "+263" });
@@ -411,7 +384,7 @@
             cuiPanel3.Controls.Add(MisplacedFix_img);
             cuiPanel3.Controls.Add(Contact_txb);
             cuiPanel3.Controls.Add(Contact_ComboBox);
-            cuiPanel3.Location = new Point(257, 216);
+            cuiPanel3.Location = new Point(96, 306);
             cuiPanel3.Name = "cuiPanel3";
             cuiPanel3.OutlineThickness = 1F;
             cuiPanel3.PanelColor = Color.White;
@@ -451,7 +424,7 @@
             Contact_txb.Name = "Contact_txb";
             Contact_txb.NormalImageTint = Color.White;
             Contact_txb.OutlineColor = Color.Transparent;
-            Contact_txb.Padding = new Padding(16, 4, 16, 0);
+            Contact_txb.Padding = new Padding(20, 2, 20, 0);
             Contact_txb.PasswordChar = false;
             Contact_txb.PlaceholderColor = Color.LightGray;
             Contact_txb.PlaceholderText = "";
@@ -475,13 +448,13 @@
             City_txb.Image = null;
             City_txb.ImageExpand = new Point(0, 0);
             City_txb.ImageOffset = new Point(0, 0);
-            City_txb.Location = new Point(137, 288);
+            City_txb.Location = new Point(438, 240);
             City_txb.Margin = new Padding(2);
             City_txb.Multiline = false;
             City_txb.Name = "City_txb";
             City_txb.NormalImageTint = Color.White;
             City_txb.OutlineColor = Color.FromArgb(128, 128, 128, 128);
-            City_txb.Padding = new Padding(16, 7, 16, 0);
+            City_txb.Padding = new Padding(20, 5, 20, 0);
             City_txb.PasswordChar = false;
             City_txb.PlaceholderColor = Color.LightGray;
             City_txb.PlaceholderText = "Enter Your City";
@@ -495,18 +468,18 @@
             // 
             Gender_lbl.AutoSize = true;
             Gender_lbl.ForeColor = Color.FromArgb(30, 41, 57);
-            Gender_lbl.Location = new Point(321, 272);
+            Gender_lbl.Location = new Point(432, 150);
             Gender_lbl.Name = "Gender_lbl";
-            Gender_lbl.Size = new Size(48, 15);
+            Gender_lbl.Size = new Size(60, 20);
             Gender_lbl.TabIndex = 32;
             Gender_lbl.Text = "Gender:";
             // 
             // MaleRadio
             // 
             MaleRadio.AutoSize = true;
-            MaleRadio.Location = new Point(345, 296);
+            MaleRadio.Location = new Point(438, 180);
             MaleRadio.Name = "MaleRadio";
-            MaleRadio.Size = new Size(51, 19);
+            MaleRadio.Size = new Size(63, 24);
             MaleRadio.TabIndex = 33;
             MaleRadio.TabStop = true;
             MaleRadio.Text = "Male\r\n";
@@ -515,9 +488,9 @@
             // FemaleRadio
             // 
             FemaleRadio.AutoSize = true;
-            FemaleRadio.Location = new Point(433, 296);
+            FemaleRadio.Location = new Point(510, 180);
             FemaleRadio.Name = "FemaleRadio";
-            FemaleRadio.Size = new Size(63, 19);
+            FemaleRadio.Size = new Size(78, 24);
             FemaleRadio.TabIndex = 34;
             FemaleRadio.TabStop = true;
             FemaleRadio.Text = "Female";
@@ -526,7 +499,7 @@
             // cuiPanel4
             // 
             cuiPanel4.Controls.Add(Country_ComboBx);
-            cuiPanel4.Location = new Point(25, 216);
+            cuiPanel4.Location = new Point(96, 240);
             cuiPanel4.Name = "cuiPanel4";
             cuiPanel4.OutlineThickness = 1F;
             cuiPanel4.PanelColor = Color.White;
@@ -540,7 +513,7 @@
             Country_ComboBx.DropDownStyle = ComboBoxStyle.DropDownList;
             Country_ComboBx.DropDownWidth = 100;
             Country_ComboBx.FlatStyle = FlatStyle.Flat;
-            Country_ComboBx.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Country_ComboBx.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Country_ComboBx.ForeColor = Color.FromArgb(30, 41, 57);
             Country_ComboBx.FormattingEnabled = true;
             Country_ComboBx.Items.AddRange(new object[] { "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo (Congo-Brazzaville)", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia (Czech Republic)", "Democratic Republic of the Congo", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Palestine State", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Korea", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Tajikistan", "Tanzania", "Thailand", "Timor-Leste", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe" });
@@ -564,10 +537,129 @@
             // 
             Prj_openFileDialog.FileName = "openFileDialog1";
             // 
+            // Birthday_lb
+            // 
+            Birthday_lb.AutoSize = true;
+            Birthday_lb.ForeColor = Color.FromArgb(30, 41, 57);
+            Birthday_lb.Location = new Point(90, 150);
+            Birthday_lb.Name = "Birthday_lb";
+            Birthday_lb.Size = new Size(67, 20);
+            Birthday_lb.TabIndex = 36;
+            Birthday_lb.Text = "Birthday:";
+            Birthday_lb.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // Birthday_DatePicker
+            // 
+            Birthday_DatePicker.Content = new DateTime(2025, 11, 27, 0, 0, 0, 0);
+            Birthday_DatePicker.EnableThemeChangeButton = true;
+            Birthday_DatePicker.Font = new Font("Segoe UI", 9.75F);
+            Birthday_DatePicker.ForeColor = Color.Gray;
+            Birthday_DatePicker.HoverBackground = Color.FromArgb(50, 128, 128, 128);
+            Birthday_DatePicker.HoverOutline = Color.FromArgb(180, 128, 128, 128);
+            Birthday_DatePicker.Icon = (Image)resources.GetObject("Birthday_DatePicker.Icon");
+            Birthday_DatePicker.IconTint = Color.Gray;
+            Birthday_DatePicker.Location = new Point(96, 174);
+            Birthday_DatePicker.Margin = new Padding(4, 5, 4, 5);
+            Birthday_DatePicker.Name = "Birthday_DatePicker";
+            Birthday_DatePicker.NormalBackground = Color.FromArgb(32, 128, 128, 128);
+            Birthday_DatePicker.NormalOutline = Color.FromArgb(150, 128, 128, 128);
+            Birthday_DatePicker.OutlineThickness = 1.5F;
+            Birthday_DatePicker.PickerPosition = CuoreUI.Controls.cuiCalendarDatePicker.Position.Bottom;
+            Birthday_DatePicker.PressedBackground = Color.FromArgb(80, 128, 128, 128);
+            Birthday_DatePicker.PressedOutline = Color.FromArgb(210, 128, 128, 128);
+            Birthday_DatePicker.Rounding = 8;
+            Birthday_DatePicker.ShowIcon = true;
+            Birthday_DatePicker.Size = new Size(180, 30);
+            Birthday_DatePicker.TabIndex = 37;
+            Birthday_DatePicker.Theme = CuoreUI.Controls.Forms.DatePicker.Themes.Light;
+            // 
+            // cuiPanel5
+            // 
+            cuiPanel5.Controls.Add(Nationality_cb);
+            cuiPanel5.Location = new Point(438, 306);
+            cuiPanel5.Name = "cuiPanel5";
+            cuiPanel5.OutlineThickness = 1F;
+            cuiPanel5.PanelColor = Color.White;
+            cuiPanel5.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel5.Rounding = new Padding(15);
+            cuiPanel5.Size = new Size(192, 32);
+            cuiPanel5.TabIndex = 37;
+            // 
+            // Nationality_cb
+            // 
+            Nationality_cb.DropDownStyle = ComboBoxStyle.DropDownList;
+            Nationality_cb.DropDownWidth = 100;
+            Nationality_cb.FlatStyle = FlatStyle.Flat;
+            Nationality_cb.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Nationality_cb.ForeColor = Color.FromArgb(30, 41, 57);
+            Nationality_cb.FormattingEnabled = true;
+            Nationality_cb.Items.AddRange(new object[] { "Afghan", "Albanian", "Algerian", "American", "Andorran", "Angolan", "Argentine", "Armenian", "Australian", "Austrian", "Azerbaijani", "Bahamian", "Bahraini", "Bangladeshi", "Barbadian", "Belarusian", "Belgian", "Belizean", "Beninese", "Bhutanese", "Bolivian", "Bosnian", "Botswanan", "Brazilian", "British", "Bruneian", "Bulgarian", "Burkinabe", "Burmese", "Burundian", "Cabo Verdean", "Cambodian", "Cameroonian", "Canadian", "Central African", "Chadian", "Chilean", "Chinese", "Colombian", "Comorian", "Congolese", "Costa Rican", "Croatian", "Cuban", "Cypriot", "Czech", "Danish", "Djiboutian", "Dominican (Dominica)", "Dominican (Dominican Republic)", "Dutch", "East Timorese", "Ecuadorean", "Egyptian", "Emirati", "Equatorial Guinean", "Eritrean", "Estonian", "Eswatini", "Ethiopian", "Fijian", "Filipino", "Finnish", "French", "Gabonese", "Gambian", "Georgian", "German", "Ghanaian", "Greek", "Grenadian", "Guatemalan", "Guinea-Bissauan", "Guinean", "Guyanese", "Haitian", "Honduran", "Hungarian", "Icelandic", "Indian", "Indonesian", "Iranian", "Iraqi", "Irish", "Israeli", "Italian", "Ivorian", "Jamaican", "Japanese", "Jordanian", "Kazakh", "Kenyan", "Kiribati", "Korean (North)", "Korean (South)", "Kosovar", "Kuwaiti", "Kyrgyz", "Lao", "Latvian", "Lebanese", "Lesotho", "Liberian", "Libyan", "Liechtensteiner", "Lithuanian", "Luxembourgish", "Malagasy", "Malawian", "Malaysian", "Maldivian", "Malian", "Maltese", "Marshallese", "Mauritanian", "Mauritian", "Mexican", "Micronesian", "Moldovan", "Monégasque", "Mongolian", "Montenegrin", "Moroccan", "Mozambican", "Namibian", "Nauruan", "Nepalese", "New Zealander", "Nicaraguan", "Nigerian", "Nigerien", "Niuean", "Norwegian", "Omani", "Pakistani", "Palauan", "Palestinian", "Panamanian", "Papua New Guinean", "Paraguayan", "Peruvian", "Polish", "Portuguese", "Qatari", "Romanian", "Russian", "Rwandan", "Saint Lucian", "Salvadoran", "Samoan", "San Marinese", "Sao Tomean", "Saudi Arabian", "Scottish", "Senegalese", "Serbian", "Seychellois", "Sierra Leonean", "Singaporean", "Slovak", "Slovenian", "Solomon Islander", "Somali", "South African", "South Sudanese", "Spanish", "Sri Lankan", "Sudanese", "Surinamese", "Swedish", "Swiss", "Syrian", "Taiwanese", "Tajik", "Tanzanian", "Thai", "Togolese", "Tongan", "Trinidadian", "Tunisian", "Turkish", "Turkmen", "Tuvaluan", "Ugandan", "Ukrainian", "Uruguayan", "Uzbek", "Vanuatuan", "Vatican", "Venezuelan", "Vietnamese", "Welsh", "Yemeni", "Zambian", "Zimbabwean" });
+            Nationality_cb.Location = new Point(8, 2);
+            Nationality_cb.Name = "Nationality_cb";
+            Nationality_cb.Size = new Size(176, 28);
+            Nationality_cb.Sorted = true;
+            Nationality_cb.TabIndex = 31;
+            // 
+            // Nationality_lb
+            // 
+            Nationality_lb.AutoSize = true;
+            Nationality_lb.ForeColor = Color.FromArgb(30, 41, 57);
+            Nationality_lb.Location = new Point(432, 282);
+            Nationality_lb.Name = "Nationality_lb";
+            Nationality_lb.Size = new Size(85, 20);
+            Nationality_lb.TabIndex = 36;
+            Nationality_lb.Text = "Nationality:";
+            Nationality_lb.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // FullAddress_txb
+            // 
+            FullAddress_txb.BackgroundColor = Color.White;
+            FullAddress_txb.Content = "";
+            FullAddress_txb.FocusBackgroundColor = Color.White;
+            FullAddress_txb.FocusImageTint = Color.White;
+            FullAddress_txb.FocusOutlineColor = Color.FromArgb(255, 106, 0);
+            FullAddress_txb.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FullAddress_txb.ForeColor = Color.FromArgb(30, 41, 57);
+            FullAddress_txb.Image = null;
+            FullAddress_txb.ImageExpand = new Point(0, 0);
+            FullAddress_txb.ImageOffset = new Point(0, 0);
+            FullAddress_txb.Location = new Point(96, 372);
+            FullAddress_txb.Margin = new Padding(2);
+            FullAddress_txb.Multiline = false;
+            FullAddress_txb.Name = "FullAddress_txb";
+            FullAddress_txb.NormalImageTint = Color.White;
+            FullAddress_txb.OutlineColor = Color.FromArgb(128, 128, 128, 128);
+            FullAddress_txb.Padding = new Padding(20, 5, 20, 0);
+            FullAddress_txb.PasswordChar = false;
+            FullAddress_txb.PlaceholderColor = Color.LightGray;
+            FullAddress_txb.PlaceholderText = "Enter Your Full Address";
+            FullAddress_txb.Rounding = new Padding(8);
+            FullAddress_txb.Size = new Size(528, 30);
+            FullAddress_txb.TabIndex = 39;
+            FullAddress_txb.TextOffset = new Size(0, 0);
+            FullAddress_txb.UnderlinedStyle = true;
+            // 
+            // FullAddress_lb
+            // 
+            FullAddress_lb.AutoSize = true;
+            FullAddress_lb.ForeColor = Color.FromArgb(30, 41, 57);
+            FullAddress_lb.Location = new Point(90, 348);
+            FullAddress_lb.Name = "FullAddress_lb";
+            FullAddress_lb.Size = new Size(65, 20);
+            FullAddress_lb.TabIndex = 38;
+            FullAddress_lb.Text = "Address:";
+            FullAddress_lb.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // PERSONAL
             // 
-            AutoScaleMode = AutoScaleMode.Inherit;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(245, 246, 255);
+            Controls.Add(FullAddress_txb);
+            Controls.Add(FullAddress_lb);
+            Controls.Add(cuiPanel5);
+            Controls.Add(Nationality_lb);
+            Controls.Add(Birthday_DatePicker);
+            Controls.Add(Birthday_lb);
             Controls.Add(cuiPanel4);
             Controls.Add(FemaleRadio);
             Controls.Add(MaleRadio);
@@ -578,11 +670,9 @@
             Controls.Add(PersonRMV_bttn);
             Controls.Add(PersonUP_bttn);
             Controls.Add(label12);
-            Controls.Add(Address_txb);
             Controls.Add(City_txb);
             Controls.Add(Age_txb);
             Controls.Add(Email_txb);
-            Controls.Add(address_lb);
             Controls.Add(phone_lb);
             Controls.Add(city_lb);
             Controls.Add(Country_lb);
@@ -592,7 +682,7 @@
             Controls.Add(name_lb);
             Margin = new Padding(3, 2, 3, 2);
             Name = "PERSONAL";
-            Size = new Size(576, 568);
+            Size = new Size(720, 710);
             Load += PERSONAL_Load;
             ((System.ComponentModel.ISupportInitialize)Personal_pb).EndInit();
             cuiPanel1.ResumeLayout(false);
@@ -601,6 +691,7 @@
             cuiPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)MisplacedFix_img).EndInit();
             cuiPanel4.ResumeLayout(false);
+            cuiPanel5.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -618,10 +709,8 @@
         private Label Country_lb;
         private Label city_lb;
         private Label phone_lb;
-        private Label address_lb;
         private CuoreUI.Controls.cuiTextBox Email_txb;
         private CuoreUI.Controls.cuiTextBox Age_txb;
-        private CuoreUI.Controls.cuiTextBox Address_txb;
         private CuoreUI.Controls.cuiButton PersonUP_bttn;
         private CuoreUI.Controls.cuiButton PersonRMV_bttn;
         private Label label12;
@@ -641,5 +730,12 @@
         private PictureBox MisplacedFix_img;
         private CuoreUI.Components.cuiTooltipHover cuiTooltipHover1;
         private OpenFileDialog Prj_openFileDialog;
+        private Label Birthday_lb;
+        private CuoreUI.Controls.cuiCalendarDatePicker Birthday_DatePicker;
+        private CuoreUI.Controls.cuiPanel cuiPanel5;
+        private ComboBox Nationality_cb;
+        private Label Nationality_lb;
+        private CuoreUI.Controls.cuiTextBox FullAddress_txb;
+        private Label FullAddress_lb;
     }
 }

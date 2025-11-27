@@ -558,7 +558,8 @@
             // 
             // CV_Creator_Form
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackgroundImage = Properties.Resources.Personal;
             ClientSize = new Size(1384, 677);
             Controls.Add(SummaryMain_pl);
